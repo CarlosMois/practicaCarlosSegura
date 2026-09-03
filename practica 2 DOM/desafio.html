@@ -4,10 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+<style>
+    body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding-top: 100px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+/* ESTILO 1: GRADIENTE */
+
+.gradient {
+    background: linear-gradient(90deg, #ff00cc, #3333ff);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+
+/* ESTILO 2: 3D */
+
+.tresD {
+    color: #ffffff;
+    text-shadow:
+        3px 3px 0px #555,
+        6px 6px 0px #333,
+        9px 9px 0px #111;
+}
+
+
+/* ESTILO 3: GLITCH */
+
+.glitch {
+    color: #00ffff;
+    text-shadow:
+        3px 0px #ff0000,
+        -3px 0px #0000ff;
+}
+
+
+
+</style>
+
 </head>
+
 <body>
     
-    <h1>Haz todo con amor y dedicación</h1>
+    <h1 id="frase">If you are tired, then do it tired.</h1>
+
+    <button onclick="cambiarEstilo('gradient')">Gradient</button>
+    <button onclick="cambiarEstilo('tresD')">3D</button>
+    <button onclick="cambiarEstilo('glitch')">Glitch</button>
+
 
 <script src="js/script3.js"></script>
 
